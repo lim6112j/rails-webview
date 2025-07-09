@@ -8,3 +8,17 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+/* Offline indicator */
+.offline-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #ff4444;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  z-index: 9999;
+  display: none;
+}
