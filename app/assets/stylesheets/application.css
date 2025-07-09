@@ -13,7 +13,7 @@
 .navbar {
   background-color: red;
   padding: 1rem 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .nav-container {
@@ -57,14 +57,14 @@
 }
 
 .nav-link:hover {
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   color: white;
 }
 
 /* Main content */
 .main-content {
   min-height: calc(100vh - 80px);
-  padding: 2rem 1rem;
+  /* padding: 2rem 1rem; */
 }
 
 /* Responsive navigation */
@@ -73,7 +73,7 @@
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .nav-menu {
     flex-wrap: wrap;
     justify-content: center;
