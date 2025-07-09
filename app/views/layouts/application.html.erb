@@ -23,6 +23,34 @@
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="navbar">
+      <div class="nav-container">
+        <%= link_to "FlutterApp", root_path, class: "nav-logo" %>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <%= link_to "Home", root_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "About", pages_about_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Contact", pages_contact_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Pricing", pages_pricing_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "FAQ", pages_faq_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Bookings", bookings_index_path, class: "nav-link" %>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <main class="main-content">
+      <%= yield %>
+    </main>
   </body>
 </html>
